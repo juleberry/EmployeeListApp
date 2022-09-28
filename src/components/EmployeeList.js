@@ -4,6 +4,8 @@ const EmployeeList = (props) => {
   return (
     <>
     <EmployeeListItem />
+    <EmployeeListItem />
+    <EmployeeListItem />
     </>
   )
 }
