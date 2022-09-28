@@ -1,5 +1,11 @@
-export default (props) => {
+import EmployeeListItem from "./EmployeeListItem"
+
+const EmployeeList = (props) => {
   return (
-    <h1></h1>
+    <>
+    <EmployeeListItem />
+    </>
   )
 }
+
+export default EmployeeList

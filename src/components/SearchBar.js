@@ -1,5 +1,14 @@
-export default (props) => {
+const SearchBar = (props) => {
   return (
-    <h1></h1>
+    <>
+      <div class="section">
+        <form>
+        <input type="textarea" name="searchBar" placeholder="Search">
+        </input>
+      </form>
+    </div>
+    </>
   )
 }
+
+export default SearchBar

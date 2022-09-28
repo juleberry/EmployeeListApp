@@ -1,5 +1,10 @@
-export default (props) => {
+const Header = (props) => {
   return (
-    <h1></h1>
+    <div class="section">
+      <h1>Employee Directory</h1>
+    </div>
+    
   )
 }
+
+export default Header
