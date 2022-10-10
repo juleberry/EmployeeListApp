@@ -1,13 +1,21 @@
 import EmployeeListItem from "./EmployeeListItem"
+import '../styles.css'
+import employeeList from "../data"
 
-const EmployeeList = (props) => {
+const list = employeeList.map((element, index) => {
+  return (
+    <EmployeeListItem key={index}
+    {...element}
+    />
+  )
+})
+
+export default function EmployeeList() {
   return (
     <>
-    <EmployeeListItem />
-    <EmployeeListItem />
-    <EmployeeListItem />
+    <div>
+    {list}
+    </div>
     </>
   )
 }
-
-export default EmployeeList

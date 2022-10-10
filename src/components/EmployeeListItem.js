@@ -3,13 +3,14 @@ const EmployeeListItem = (props) => {
     <>
       <div class="employeeCard section">
         <div class="employeePicture">
-          <img src="https://images2.imgbox.com/cd/87/jnDoymdD_o.png" alt="employeeHeadshot" id="silhouette" />
+          <img src={props.pic} alt="employeeHeadshot" id="silhouette" />
         </div>
         <div class="employeeName">
-          <h1>Employee Name</h1>
+          <h2>{props.firstName} {props.lastName}</h2>
+          <h3>{props.title}</h3>
         </div>
-        <div class="employeeTitle">
-          <h2>Title</h2>
+        <div class="employeeDetails">
+          <h4><a href="#">{props.email}</a></h4>
         </div>
       </div>
     </>
