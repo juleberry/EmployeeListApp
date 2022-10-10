@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(184, 206, 255);
+  background-color: white;
   max-width: 800px;
   margin: auto;
 }
@@ -45,8 +45,41 @@ body {
   }
 
   #searchBarField {
-    width: 98%;
+    width: 95%;
     height: 10%;
     padding: .5rem;
     border-radius: 3px;
   }
+
+#homeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* background-color: rgb(184, 206, 255); */
+} 
+
+#leftSide {
+    width: 55%;
+    overflow: auto;
+    background-color: rgb(184, 206, 255);
+  }
+
+  #rightSide {
+    width: 45%;
+    height: 100vh;
+    background-color: rgb(119, 160, 250);
+  }
+
+  #empPageHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  #backBtn {
+    margin: 1.5rem;
+    padding: .25rem;
+    height: 2rem;
+    float: left;
+  }
+
