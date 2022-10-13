@@ -1,17 +1,14 @@
-export default function EmployeePage (props) {
+import { Link } from "react-router-dom"
+import Employee from "./Employee"
+
+export default function EmployeePage (id, pic, firstName, lastName, title, officePhone, email) {
   return (
     <>
-      <div id="empPageHeader"><button id="backBtn">Back</button>
-      <h1>Employee</h1>
+      <div id="empPageHeader">
+        <Link to="/"><button id="backBtn">Back</button></Link>
+      <h2>Employee Details</h2>
       </div>
-      <div>
-      <h2>Employee Name</h2>
-      <img src="https://thumbs2.imgbox.com/cd/87/jnDoymdD_t.png" id="silhouette" />
-      <h3>Employee Title</h3>
-      <h4>Employee Office Phone</h4>
-      <h4>Employee Mobile Phone</h4>
-      <h4>Employee Email</h4>
-      </div>
+      <Employee />
     </>
   )
 }

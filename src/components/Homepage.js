@@ -2,12 +2,13 @@ import EmployeeList from "./EmployeeList"
 import Header from "./Header"
 import SearchBar from "./SearchBar"
 import EmployeePage from "./EmployeePage"
+import Employee from "./Employee"
 
 const Homepage = (props) => {
   return (
   <>
     <div id="homeContainer">
-      <div class="section" id="leftSide">
+      <div id="leftSide">
         <Header />
         <SearchBar />
         <EmployeeList />
