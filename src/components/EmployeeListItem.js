@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const EmployeeListItem = (props) => {
   return (
     <>
@@ -6,11 +8,11 @@ const EmployeeListItem = (props) => {
           <img src={props.pic} alt="employeeHeadshot" id="silhouette" />
         </div>
         <div class="employeeName">
-          <h2>{props.firstName} {props.lastName}</h2>
+          <Link to={`/employees/${props.id}`}><h2>{props.firstName} {props.lastName}</h2></Link>
           <h3>{props.title}</h3>
         </div>
         <div class="employeeDetails">
-          <h4><a href="#">{props.email}</a></h4>
+          <h4><a href="mailto:#">{props.email}</a></h4>
         </div>
       </div>
     </>
